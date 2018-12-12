@@ -1,0 +1,486 @@
+/* Dark blue: #1d252c
+Red: #db3340*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ck2qql');
+  src:  url('../fonts/icomoon.eot?ck2qql#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ck2qql') format('truetype'),
+    url('../fonts/icomoon.woff?ck2qql') format('woff'),
+    url('../fonts/icomoon.svg?ck2qql#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  color: #1d252c;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+/*------START Header section --------*/
+.burger-button {
+  align-items: center;
+  background-color: rgba(29,37,44,.8);
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  left: 5px;
+  position: fixed;
+  top: 5px;
+  width: 40px;
+  z-index: 4;
+}
+
+header {
+  background-color: #1d252c;
+  width: 100%;
+}
+
+.wrap-header {
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+}
+.wrap-header h1 {
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: .5em;
+  text-align: center;
+  width: 100%;
+}
+
+.wrap-header h1 a {
+  color:#ffffff;
+  font-size:2em;
+  text-decoration: none;
+}
+
+.nav-header {
+  align-items: center;
+  background-color: rgba(232, 101, 92, .8);
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  transition: .7s;
+  width: 100vw;
+  z-index: 3;
+}
+
+.nav-header.is-active {
+  left: 0;
+}
+
+.nav-header ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+.nav-header ul li{
+  text-align: center;
+  width: 100%;
+}
+
+.nav-header ul li:last-child a{
+  border: 1px solid #ffffff;
+  margin: .3em;
+}
+.nav-header ul li a{
+  display: block;
+  color:#ffffff;
+  font-size:2em;
+  padding: .3em;
+  text-decoration: none;
+}
+
+/*------ END Header section -----*/
+
+/* ----- START Hero section ----- */
+.wrapper {
+  max-width: 1080px;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+.hero h2 {
+  color: #1d252c;
+  font-size: 2em;
+  padding: 1.5em 0;
+}
+.hero span {
+  color: #db3340;
+}
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+/* ----- END Hero section ----- */
+
+.sections {
+  box-sizing: border-box;
+  padding: .5em;
+  width: 100%;
+}
+
+.sections h3 {
+  color: #db3340;
+  font-size: 1.5em;
+  padding: .4em 0;
+}
+
+/* ----- START Projects section ----- */
+
+.project {
+  box-shadow: 0 0 10px #cccccc;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  margin-bottom: 1.2em;
+}
+
+.project-details {
+  padding: .5em;
+}
+
+.project-title {
+  background-color: #1d252c;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: .2em;
+}
+
+.project-slogan {
+  font-size: .8em;
+}
+
+.project-url {
+  color: #e8655c;
+  font-size: .9em;
+}
+
+.project-description {
+  font-size: 1em;
+  margin: 0;
+  padding: .5em 0;
+}
+
+.project-imageContainer {
+  height: 100%;
+  width: 100%;
+}
+.project-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* ----- END Projects section ----- */
+
+
+/* ----- START Graphics section ----- */
+.graphic {
+  box-shadow: 0 0 10px #cccccc;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1.2em;
+  position: relative;
+  z-index: 1;
+}
+
+.graphic-imageContainer {
+width: 100%;
+}
+
+.graphic-image {
+  display: block;
+  width: 100%;
+}
+
+.graphic-details {
+  padding: .5em .5em 0;
+  text-align: center;
+}
+
+.graphic-title {
+  color: #1d252c;
+  font-size: 1.2em;
+  padding: .4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.graphic-description {
+  margin: 0;
+  padding: .5em 0;
+  margin-bottom: 2.3em;
+  text-align: left;
+}
+
+.graphic-url {
+  background-color: #db3340;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0.3em 0;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* ----- END Graphics section ----- */
+
+
+
+
+/* ----- START Footer section ----- */
+
+footer {
+  background-color: #1d252c;
+  width: 100%;
+}
+
+.wrap-footer {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.form-email {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1.5em 0;
+}
+
+.form-email h3 {
+  color: #ffffff;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-email input {
+  background-image: url('../img/envelope.svg');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-x: 30px;
+  background-position-y: center;
+  border: 0 solid #ffffff;
+  color: #db3340;
+  font-size: .9em;
+  text-align: center;
+  margin: .7em auto;
+  padding: .7em 0;
+  transition: background-size 0.3s linear;
+  width: 245px;
+}
+
+.form-email input:focus {
+  background-size: 0 0;
+  color: #1d252c;
+}
+
+.form-email button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: .3em 0;
+  width: 100px;
+}
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.social-link {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 0 .5em;
+}
+
+/* ----- END Footer section ----- */
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  /*------START Header section --------*/
+  .burger-button {
+    display: none;
+  }
+  .wrap-header h1 {
+    width: 50%;
+    text-align: left;
+    padding-left: 2em;
+  }
+  .nav-header {
+    background-color: #1d252c;
+    height: initial;
+    position: initial;
+    width: 50%;
+  }
+  .nav-header ul {
+    flex-direction: row;
+    height: initial;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .nav-header ul li a {
+    font-size: 1.2em;
+  }
+  /*------END Header section --------*/
+
+
+  /*------START Hero section --------*/
+  .wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .hero {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .hero h2 {
+    width: 60%;
+    padding: 0;
+  }
+  .hero img {
+    height: 100%;
+    width: 40%;
+  }
+  /*------END Hero section --------*/
+
+
+
+
+  /*------START Projects section --------*/
+  .project {
+    background-color: #ffffff;
+    flex-flow: row nowrap;
+  }
+  .project-title {
+    font-size: 1.5em;
+  }
+  .project-slogan {
+    font-size: .9em;
+  }
+  .project-url {
+    color: #e8655c;
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: 1em;
+    margin: 0;
+    padding: .5em 0;
+  }
+  /*------END Projects section --------*/
+
+
+  /*------START Graphics section --------*/
+  .graphics {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .graphics h3 {
+    width: 100%;
+  }
+  .graphic {
+    margin: 0 .3em;
+    margin-bottom: 1.2em;
+    max-width: 300px;
+    width: 45%;
+  }
+  /*------END Graphics section --------*/
+
+
+
+
+  /*------START Footer section --------*/
+  .wrap-footer {
+    flex-flow: row nowrap;
+  }
+
+  .form-email, .social {
+    width: 50%;
+  }
+
+  .social {
+    justify-content: flex-end;
+  }
+  /*------END Footer section --------*/
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
